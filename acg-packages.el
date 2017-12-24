@@ -20,15 +20,15 @@
 			  ;; configured in /minor-modes-config/acg-company-mode.el
 			  'company
 			  'company-quickhelp
-                          'company-anaconda
+                          ;'company-anaconda
 
 			  ;; configured in /major-modes-config/
-			  'web-mode
-			  'scss-mode
-			  'less-css-mode
+			  ;'web-mode
+			  ;'scss-mode
+			  ;'less-css-mode
 			  'markdown-mode
-                          'anaconda-mode
-                          'yaml-mode
+                          ;'anaconda-mode
+                          ;'yaml-mode
 
                           ;; configured in /major-modes-config/acg-org-mode.el
                           'org-ref
