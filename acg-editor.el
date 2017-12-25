@@ -4,7 +4,7 @@
 (set-default 'truncate-lines t)
 
 ;; makes kill ring not mess with clipboard
-(setq x-select-enable-clipboard nil)
+;(setq x-select-enable-clipboard nil)
 
 ;; consider camelCased as 2 words
 (global-subword-mode 1)
@@ -16,7 +16,7 @@
 (winner-mode 1)
 
 ;; automatically run fill-paragraph
-;; (add-hook 'text-mode-hook 'turn-on-auto-fill)
+; (add-hook 'text-mode-hook 'turn-on-auto-fill)
 
 ;; visual-fill-column-mode makes the visual line be pruned at fill-column length
 (require 'visual-fill-column)
