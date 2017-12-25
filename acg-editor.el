@@ -54,7 +54,7 @@
 (setq vc-make-backup-files t)
 
 ;; saving the last session (for when you open emacs the next time)
-(desktop-save-mode 0)
+(desktop-save-mode 1)
 (setq desktop-dirname (concat default-emacs-dir "desktop/")
       desktop-path (list desktop-dirname))
 
