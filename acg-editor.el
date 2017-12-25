@@ -9,7 +9,7 @@
 ;; consider camelCased as 2 words
 (global-subword-mode 1)
 
-;; enable disabled advanced features
+;; enable downcase conversion in a region
 (put 'downcase-region 'disabled nil)
 
 ;; lets you undo and redo changes in the window configuration
