@@ -98,9 +98,9 @@ bindings to the same command."
 (setq large-file-warning-threshold 100000000)
 
 ;; make EMACS use the PATHs specified in .bashrc
-(require 'exec-path-from-shell)
-(when (memq window-system '(x))
-  (exec-path-from-shell-initialize))
+;(require 'exec-path-from-shell)
+;(when (memq window-system '(x))
+;  (exec-path-from-shell-initialize))
 
 
 (provide 'acg-core)
