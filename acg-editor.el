@@ -1,7 +1,7 @@
 ;; editor configurations
 
 ;; disable truncation of line
-(set-default 'truncate-lines t)
+;;(set-default 'truncate-lines t)
 
 ;; makes kill ring not mess with clipboard
 ;(setq x-select-enable-clipboard nil)
@@ -19,15 +19,39 @@
 ; (add-hook 'text-mode-hook 'turn-on-auto-fill)
 
 ;; visual-fill-column-mode makes the visual line be pruned at fill-column length
-(require 'visual-fill-column)
-(global-visual-fill-column-mode)
+;; (require 'visual-fill-column)
+;; (global-visual-fill-column-mode)
 (add-hook 'text-mode-hook 'visual-line-mode)
+;; (add-hook 'prog-mode-hook 'visual-line-mode)
 
 ;; fill-paragraph function only leave one space after period instead of two
 (setq sentence-end-double-space nil)
 
-;; make scratch buffer always start as text-mode and not lisp-mode
-(setq initial-major-mode 'text-mode)
+;; make scratch buffer always start as org-mode and not lisp-mode
+(setq initial-major-mode 'org-mode)
+
+;; settings -- max-width for lines when using fill commands
+(setq-default fill-column 79)
+
+;; Draw line at fill column length
+(setq-default fci-rule-column 80)
+(setq-default fci-handle-truncate-lines nil) ;; make fci don't mess with
+                                             ;; truncation
+(define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode 1)))
+(global-fci-mode 1)
+
+;; (add-hook 'org-mode-hook
+;;           (lambda ()
+            ;; (set-fill-column 96)))
+(add-hook 'tex-mode-hook
+          (lambda ()
+            (set-fill-column 96)))
+(add-hook 'text-mode-hook
+          (lambda ()
+            (set-fill-column 96)))
+
+;; Making ctrl-backspace kill word (for terminal mode)
+(global-set-key [(control ?h)] 'backward-kill-word)
 
 
 ;; search/replace
@@ -54,7 +78,7 @@
 (setq vc-make-backup-files t)
 
 ;; saving the last session (for when you open emacs the next time)
-(desktop-save-mode 1)
+(desktop-save-mode 0)
 (setq desktop-dirname (concat default-emacs-dir "desktop/")
       desktop-path (list desktop-dirname))
 

@@ -11,4 +11,4 @@
   "Changes the window fringes to center text and limit distractions."
   (interactive)
   (set-window-fringes nil 500 0 t))
-(global-set-key (kbd "<f12>") 'acg-concentration-mode)
+

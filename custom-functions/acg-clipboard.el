@@ -53,10 +53,3 @@ whitespace)"
        (progn (end-of-line) (skip-chars-backward " \t") (point)))
       (kill-whole-line))))
 
-
-;;keybindings
-(global-set-key (kbd "C-S-C") 'acg-clipboard-kill-ring-save)
-(global-set-key (kbd "C-S-X") 'acg-clipboard-kill-region-or-line)
-(global-set-key (kbd "C-S-V") 'acg-clipboard-paste-replace-selection)
-(global-set-key (kbd "C-v") 'acg-clipboard-paste-replace-selection-indent)
-

@@ -57,18 +57,12 @@ Version 2016-08-11"
 ;; adds the hook to be run whenever emacs is killed
 (push #'acg-scratch-buffer-save-backup kill-emacs-hook)
 
-
-;; keybindings
-(global-unset-key (kbd "C-n"))
-(global-set-key (kbd "C-n") 'acg-scratch-buffer-create)
-
-
 
 ;; removing the default scratch buffer
 
-(defun acg-initial-buffer-choice ()
-  (if (get-buffer "*scratch*")
-      (kill-buffer "*scratch*"))
-  (get-buffer "*Messages*"))
-
-(setq initial-buffer-choice 'acg-initial-buffer-choice)
+;(defun acg-initial-buffer-choice ()
+;  (if (get-buffer "*scratch*")
+;      (kill-buffer "*scratch*"))
+;  (get-buffer "*Messages*"))
+;
+;(setq initial-buffer-choice 'acg-initial-buffer-choice)

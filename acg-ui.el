@@ -1,16 +1,9 @@
-;; themes
-
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(add-to-list 'custom-theme-load-path (concat acg-emacs-dir "themes"))
-(load-theme 'acg-dark t)
-
-
 ;; removing unnecessary things
 
-;; hide toolbar, menubar and scrollbar
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-(scroll-bar-mode -1)
+;; Turn off mouse interface early in startup to avoid momentary display
+(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
 ;; disable startup screen
 (setq inhibit-startup-screen t) 
@@ -19,10 +12,18 @@
 (require 'diminish)
 
 
+;; themes
+
+;(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+;(add-to-list 'custom-theme-load-path (concat acg-emacs-dir "themes"))
+;(load-theme 'acg-dark t)
+(load-theme 'monokai t)
+
+
 ;; help/info menus
 
 ;; show available keybindings after you start typing
-(which-key-mode +1)
+(which-key-mode 1)
 (diminish 'which-key-mode)
 
 

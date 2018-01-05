@@ -1,4 +1,6 @@
-(ensure-package-installed 'helm ;; configured in /minor-modes-config/
+(ensure-package-installed
+                          ;; configured in /minor-modes-config/
+                          'helm 
 			  'crux
                           'use-package
 			  'minimap
@@ -16,6 +18,8 @@
                           'magit
                           'ein
                           'highlight
+                          'smart-forward
+                          'pomidor
                           
 			  ;; configured in /minor-modes-config/acg-company-mode.el
 			  'company
@@ -29,6 +33,8 @@
 			  'markdown-mode
                           ;'anaconda-mode
                           ;'yaml-mode
+                          'vhdl-mode
+                          'auctex
 
                           ;; configured in /major-modes-config/acg-org-mode.el
                           'org-ref
@@ -37,12 +43,19 @@
 			  'anzu
 			  'multiple-cursors
                           'visual-fill-column
+                          'fill-column-indicator
 
                           ;; configured in /acg-ui.el
 			  'smooth-scrolling
 			  'which-key
                           'rainbow-mode
                           'auto-dim-other-buffers
+
+                          ;; configured in /themes/
+                          'monokai-theme
+
+                          ;; other packages
+                          'frame-cmds
 			  )
 
 (my-load-all-in-directory (concat acg-emacs-dir "custom-functions"))

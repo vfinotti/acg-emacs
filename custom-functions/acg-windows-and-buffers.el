@@ -43,20 +43,3 @@
   (interactive)
   (when acg-killed-file-list
     (find-file (pop acg-killed-file-list))))
-
-
-;; keybindings
-
-(global-set-key (kbd "M-1") 'other-window)
-(global-set-key (kbd "M-q") 'crux-switch-to-previous-buffer)
-
-(global-set-key (kbd "C-1") 'delete-other-windows)
-(global-set-key (kbd "C-!") 'delete-window)
-(global-set-key (kbd "C-2") 'acg-split-window-right)
-(global-set-key (kbd "C-@") 'acg-split-window-below)
-
-(global-set-key (kbd "C-q") 'delete-window)
-
-(acg-force-global-set-key (kbd "C-w") 'acg-kill-buffer-and-window)
-
-(global-set-key (kbd "C-S-T") 'acg-reopen-killed-file)

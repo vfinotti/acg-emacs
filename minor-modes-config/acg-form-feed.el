@@ -34,7 +34,3 @@
            (open-line 1)
            (next-line)
            (insert 12))))
-
-(define-key undo-tree-map (kbd "C-_") nil)
-(global-set-key (kbd "C--") 'insert-form-feed-below)
-(global-set-key (kbd "C-_") 'insert-form-feed-above)

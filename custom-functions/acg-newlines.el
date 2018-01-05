@@ -7,6 +7,3 @@
   (crux-smart-open-line-above)
   (yank)
   (back-to-indentation))
-
-;; keybindings
-(global-set-key (kbd "<S-return>") 'acg-newline-above)

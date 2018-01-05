@@ -65,10 +65,3 @@ Version 2015-12-10"
     (let ((process-connection-type nil))
       (start-process "" nil "x-terminal-emulator"
                      (concat "--working-directory=" default-directory) )))))
-
-
-
-
-;; keybindings
-(global-set-key (kbd "C-c t") 'acg-open-in-terminal)
-(global-set-key (kbd "C-c o") 'acg-open-in-desktop)

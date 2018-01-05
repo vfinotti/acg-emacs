@@ -18,8 +18,3 @@ buffer, stop there. (function taken from prelude)"
     (back-to-indentation)
     (when (= orig-point (point))
       (move-beginning-of-line 1))))
-
-;; keybindings
-(global-set-key (kbd "<home>") 'acg-move-beginning-of-line)
-(global-set-key (kbd "<C-M-left>") 'acg-move-beginning-of-line)
-(global-set-key (kbd "<C-M-right>") 'move-end-of-line)

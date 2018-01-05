@@ -16,7 +16,3 @@
   "Add/removes comma to the end of the line"
   (interactive)
   (append-or-remove-char-to-eol 44 ","))
-
-(global-set-key (kbd "C-;") 'append-or-remove-semicolon-to-eol)
-(global-set-key (kbd "C-,") 'append-or-remove-comma-to-eol)
-;(global-set-key (kbd "M-w t") 'transpose-words)
