@@ -2,9 +2,9 @@
 (setq pomidor-sound-tick nil
       pomidor-sound-tack nil)
 
-(setq pomidor-update-interval (* 1 1)) ; seconds
+(setq pomidor-update-interval 5) ; seconds
 
-(setq pomidor-seconds 60)
+(setq pomidor-seconds (* 60 25))
 
 ;; turn off fci-mode in pomidor
 (add-hook 'pomidor-mode-hook
