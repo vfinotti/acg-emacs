@@ -21,7 +21,10 @@
 ;; visual-fill-column-mode makes the visual line be pruned at fill-column length
 ;; (require 'visual-fill-column)
 ;; (global-visual-fill-column-mode)
-(add-hook 'text-mode-hook 'visual-line-mode)
+(add-hook 'text-mode-hook
+          (lambda ()
+            (visual-line-mode t)
+            (fci-mode 0)))
 ;; (add-hook 'prog-mode-hook 'visual-line-mode)
 
 ;; fill-paragraph function only leave one space after period instead of two
