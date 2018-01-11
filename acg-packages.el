@@ -35,6 +35,8 @@
                           ;'yaml-mode
                           'vhdl-mode
                           'auctex
+                          'dired-details
+                          'org-journal
 
                           ;; configured in /major-modes-config/acg-org-mode.el
                           'org-ref
