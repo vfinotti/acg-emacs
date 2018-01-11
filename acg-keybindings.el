@@ -125,6 +125,7 @@
 
 ;; acg-org-mode
 ; keybindings are in the file
+(global-set-key (kbd "C-c C-j") 'org-journal-new-entry)
 
 ;; acg-ox-latex
 
