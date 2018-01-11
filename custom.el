@@ -2,7 +2,7 @@
 ;; Personal data
 ;;--------------------------------------------------------------------
 
-(setq user-full-name "Vitor Finotti Ferreira")
+(setq user-full-name "Vitor Finotti")
 (setq user-login-name "vfinotti")
 
 (custom-set-variables
