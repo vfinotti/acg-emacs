@@ -1,5 +1,5 @@
 (require 'org)
-(require 'crux)
+;; (require 'crux)
 
 ;; configurations
 (setq org-startup-with-inline-images t)
