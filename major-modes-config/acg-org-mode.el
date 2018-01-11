@@ -36,6 +36,17 @@
 (require 'org-ref)
 
 
+;; org-journal
+(setq org-journal-dir "~/Dropbox/org/journal")
+
+(setq org-journal-file-format "%Y%m%d_journal.org")
+(setq org-journal-date-format "%A, %d/%b/%Y")
+(setq org-journal-time-format "%R - ")
+
+;; require org-journal should come after the variable definitions
+(require 'org-journal)
+
+
 ;; setting up keybindings
 (add-hook 'org-mode-hook 
           (lambda ()
