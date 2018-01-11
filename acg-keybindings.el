@@ -141,11 +141,11 @@
 ;; Minor Modes
 
 ;; acg-company-mode
-(define-key company-active-map (kbd "M-h") #'company-quickhelp-mode)
-(define-key company-active-map (kbd "<escape>") #'company-abort)
-(define-key company-mode-map (kbd "<tab>") #'acg-company-indent-or-complete-common)
-(define-key company-active-map (kbd "C-n") 'company-select-next)
-(define-key company-active-map (kbd "C-p") 'company-select-previous)
+;; (define-key company-active-map (kbd "M-h") #'company-quickhelp-mode)
+;; (define-key company-active-map (kbd "<escape>") #'company-abort)
+;; (define-key company-mode-map (kbd "<tab>") #'acg-company-indent-or-complete-common)
+;; (define-key company-active-map (kbd "C-n") 'company-select-next)
+;; (define-key company-active-map (kbd "C-p") 'company-select-previous)
 
 
 ;; acg-crux

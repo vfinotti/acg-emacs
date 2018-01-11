@@ -83,6 +83,16 @@ Return a list of installed packages or nil for every skipped package."
           (load library nil t)
           (push library libraries-loaded))))))
 
+;; Set path to dependencies
+(setq settings-dir
+      (expand-file-name "settings" acg-emacs-dir))
+
+;; Set up load path
+(add-to-list 'load-path settings-dir)
+
+;; Load settings
+(my-load-all-in-directory settings-dir)
+
 
 ;; Removing unwanted keybindings from local modes
 
