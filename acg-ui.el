@@ -87,10 +87,10 @@
 ;; always opens help buffer in the same window
 (add-to-list 'display-buffer-alist
              '("Help" display-buffer-same-window))
-(add-to-list 'display-buffer-alist
-             '("Magit" display-buffer-same-window))
-(add-to-list 'display-buffer-alist
-             '("Anaconda" display-buffer-same-window))
+;; (add-to-list 'display-buffer-alist
+;;              '("Magit" display-buffer-same-window))
+;; (add-to-list 'display-buffer-alist
+             ;; '("Anaconda" display-buffer-same-window))
 
 ;; unhighlight inactive windows
 (diminish 'auto-dim-other-buffers-mode)
