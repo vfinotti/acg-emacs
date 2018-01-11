@@ -47,7 +47,7 @@
  '(org-latex-with-hyperref t)
  '(package-selected-packages
    (quote
-    (helm-spotify-plus helm-spotify tomatinho yasnippet which-key visual-fill-column use-package undo-tree tabbar smooth-scrolling smartparens smart-forward rainbow-mode org-ref multiple-cursors monokai-theme minimap markdown-mode magit highlight-indent-guides highlight helm-projectile frame-cmds form-feed fix-word fill-column-indicator ein diminish crux company-quickhelp auto-dim-other-buffers auctex anzu)))
+    (org-journal nyan-mode dired-details helm-spotify-plus helm-spotify tomatinho yasnippet which-key visual-fill-column use-package undo-tree tabbar smooth-scrolling smartparens smart-forward rainbow-mode org-ref multiple-cursors monokai-theme minimap markdown-mode magit highlight-indent-guides highlight helm-projectile frame-cmds form-feed fix-word fill-column-indicator ein diminish crux company-quickhelp auto-dim-other-buffers auctex anzu)))
  '(show-paren-mode t)
  '(sp-override-key-bindings
    (quote
