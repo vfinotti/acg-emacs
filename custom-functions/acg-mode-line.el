@@ -4,13 +4,16 @@
 
 (make-face 'acg-mode-line-common)
 (set-face-attribute 'acg-mode-line-common nil
+                    :inherit 'mode-line-face
                     ;; :foreground "#777"
                     :foreground (face-attribute 'mode-line :foreground)
                     :weight 'ultralight
                     )
-(make-face 'acg-mode-line-common-bold)
-(set-face-attribute 'acg-mode-line-common-bold nil
-                    :foreground (face-attribute 'acg-mode-line-common :foreground)
+
+(make-face 'acg-mode-line-filename-face)
+(set-face-attribute 'acg-mode-line-filename-face nil
+                    :inherit 'mode-line-face
+                    :foreground monokai-green
                     :weight 'bold
                     )
 
@@ -24,7 +27,7 @@
                          (if (buffer-modified-p) "[m]" "[s]")))
                
                ;; the buffer name; the file name as a tool tip
-               '(:eval (propertize " %b" 'face 'acg-mode-line-common-bold))
+               '(:eval (propertize " %b" 'face 'acg-mode-line-filename-face))
                
 
                ;; line
