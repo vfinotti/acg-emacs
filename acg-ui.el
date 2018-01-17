@@ -11,6 +11,9 @@
 ;; diminish keeps the modeline tidy
 (require 'diminish)
 
+;; Nyan-mode on!
+(setq nyan-mode t)
+
 
 ;; themes
 

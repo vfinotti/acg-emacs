@@ -20,6 +20,7 @@
                           'highlight
                           'smart-forward
                           'pomidor
+                          'nyan-mode
                           
 			  ;; configured in /minor-modes-config/acg-company-mode.el
 			  'company

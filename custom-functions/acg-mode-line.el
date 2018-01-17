@@ -34,9 +34,11 @@
                ;; '%02' to set to 2 chars at least; prevents flickering
                "   L%1l "
                ;; column
-               "C%1c"
+               "C%1c "
                ;; relative position, size of file
-               " %p" ;; % above top
+               ;; " %p" ;; % above top
+               ;; nyan-mode uses nyan cat as an alternative to %p
+               '(:eval (if nyan-mode (list (nyan-create)) "%p"))
                
 
                ;; the current major mode for the buffer.
