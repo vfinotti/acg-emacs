@@ -88,6 +88,12 @@
 ;; C-z caused the windows to stop updating, although any key pressed still
 ;; affected the buffer
 (global-unset-key (kbd "C-z"))
+
+;; Zoom in and out
+(global-unset-key (kbd "C-x C-+")) ;; don't zoom like this
+(global-set-key (kbd "C--" ) 'zoom-frm-out)
+(global-set-key (kbd "C-=") 'zoom-frm-in)
+
 
 
 
@@ -168,7 +174,7 @@
 
 ;; acg-form-feed
 ;; (define-key undo-tree-map (kbd "C-_") nil)
-(global-set-key (kbd "C--") 'insert-form-feed-below)
+;; (global-set-key (kbd "C--") 'insert-form-feed-below)
 ;; (global-set-key (kbd "C-_") 'insert-form-feed-above)
 
 ;; acg-helm
