@@ -112,7 +112,6 @@
     (cons "" tabbar-scroll-right-button-enabled-image)
     (cons "" nil)))
  '(tool-bar-mode nil)
- '(vhdl-clock-edge-condition (quote function))
  '(vhdl-company-name "Sao Paulo Research and Analysis Center,  SPRACE")
  '(vhdl-copyright-string
    "-------------------------------------------------------------------------------
@@ -131,9 +130,7 @@
 -- You should have received a copy of the GNU Lesser General Public
 -- License along with this program. If not, see
 -- <http://www.gnu.org/licenses/>.
-")
- '(vhdl-reset-active-high t)
- '(vhdl-reset-kind (quote sync)))
+"))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
